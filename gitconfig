@@ -60,5 +60,10 @@
 [init]
   defaultBranch = master
 [user]
-	email = prifinkler@gmail.com
-	name = Priscila Finkler
+	email = 130703868+prifinkler@users.noreply.github.com
+	name = Priscila Finkler Innocente
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
